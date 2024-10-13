@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="id"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            border: 1px solid #eaeaea;
+        }
+
+        .logo img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #ff5722;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e64a19;
+        }
+
+        .forgot-password {
+            color: #ff5722;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #ff5722;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="logo">
+            <img src="https://cdn.shopee.co.id/file/6bbd8cb6469b6f1a4d97b742c62f390e" alt="Shopee Logo"/>
+        </div>
+        <h2>Login ke Shopee</h2>
+        <form action="" method="post">
+            <div class="input-group">
+                <input type="text" name="username" placeholder="Nomor Ponsel / Email / Username" required=""/>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Password" required=""/>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <a href="#" class="forgot-password">Lupa Password?</a>
+        <div class="error">
+            <!-- Pesan error akan muncul di sini jika ada -->
+        </div>
+        <div class="footer">
+            Belum punya akun? <a href="#">Daftar</a>
+        </div>
+    </div>
+
+
+
+</body></html>
